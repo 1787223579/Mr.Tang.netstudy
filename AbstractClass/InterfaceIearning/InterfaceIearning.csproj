@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="MiscellaneousFile\**" />
+    <EmbeddedResource Remove="MiscellaneousFile\**" />
+    <None Remove="MiscellaneousFile\**" />
+  </ItemGroup>
+
 </Project>

@@ -7,13 +7,16 @@ namespace InterfaceIearning
     {
         static void Main(string[] args)
         {
-            int[] num1 = new int[] { 1, 2, 3, 4, 5, 6 };
-            ArrayList array = new ArrayList { 1, 2, 3, 4, 5, 6 };
-            Console.WriteLine(Sum(num1));
-            Console.WriteLine(Avg(array));
+            /* int[] num1 = new int[] { 1, 2, 3, 4, 5, 6 };
+             ArrayList array = new ArrayList { 1, 2, 3, 4, 5, 6 };
+             Console.WriteLine(Sum(num1));
+             Console.WriteLine(Avg(array));*/
+            //解耦示列
+            var user = new PhoneUser(new EricssonPhone());
+            user.UserPhone();
         }
 
-        static int Sum(IEnumerable nums)
+        /*static int Sum(IEnumerable nums)
         {
             int sum = 0;
             foreach (var item in nums)
@@ -31,7 +34,7 @@ namespace InterfaceIearning
                 sum += (int)item; count++;
             }
             return sum / count;
-        }
+        }*/
     }
 }
 
